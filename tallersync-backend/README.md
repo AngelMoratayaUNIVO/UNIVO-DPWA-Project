@@ -48,21 +48,6 @@ npm install
 cp .env.example .env
 ```
 
-Luego editar `.env` con tus credenciales reales:
-
-```env
-PORT=3000
-NODE_ENV=development
-
-SUPABASE_URL=https://xxxxxxxxxxxx.supabase.co   # Dashboard Supabase → Settings → API
-SUPABASE_KEY=your_supabase_anon_key_here         # Dashboard Supabase → Settings → API → anon key
-
-JWT_SECRET=una_clave_larga_y_segura_minimo_32_caracteres
-JWT_EXPIRES_IN=7d
-```
-
-> ⚠️ Nunca subas el archivo `.env` a GitHub. Ya está en `.gitignore`.
-
 ### 4. Crear las tablas en Supabase
 
 1. Entrar al [Dashboard de Supabase](https://app.supabase.com)
@@ -276,8 +261,8 @@ Ver guía detallada en [`docs/deploy-aws.md`](./docs/deploy-aws.md).
 | Nombre | Carné | Rol en el proyecto |
 |---|---|---|
 | Jonatan Elías Guevara Chicas | U20220546 | — |
-| Angel David Morataya Isleño | U20261887 | — |
-| Luisa Eunice Álvarez Tejada | U20200615 | — |
+| Angel David Morataya Isleño | U20261887 | Backend y Base de Datos |
+| Luisa Eunice Álvarez Tejada | U20200615 | Frontend |
 
 **Materia:** Desarrollo De Páginas Web Activas  
 **Universidad:** Universidad de Oriente — Facultad de Ingeniería y Arquitectura
