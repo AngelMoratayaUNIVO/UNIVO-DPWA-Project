@@ -5,16 +5,16 @@ const BASE_URL = 'http://localhost:3000/api';
 
 async function runTests() {
   console.log('============================================================');
-  console.log('🚀 INICIANDO PRUEBAS DE ENDPOINTS DE TALLERSYNC BACKEND');
+  console.log(' INICIANDO PRUEBAS DE ENDPOINTS DE TALLERSYNC BACKEND');
   console.log('============================================================\n');
 
   // Verificar que el servidor esté activo
   try {
     const healthRes = await fetch('http://localhost:3000/health');
     const healthData = await healthRes.json();
-    console.log('🟢 Servidor detectado en funcionamiento:', healthData.message);
+    console.log(' Servidor detectado en funcionamiento:', healthData.message);
   } catch (error) {
-    console.error('🔴 ERROR: El servidor backend no parece estar ejecutándose. Asegúrate de ejecutar `npm run dev` primero.');
+    console.error(' ERROR: El servidor backend no parece estar ejecutándose. Asegúrate de ejecutar `npm run dev` primero.');
     process.exit(1);
   }
 
@@ -59,9 +59,9 @@ async function runTests() {
 
   function printResult(testName, success, details = '') {
     if (success) {
-      console.log(`✅ [PASS] ${testName} ${details ? `- ${details}` : ''}`);
+      console.log(` [PASS] ${testName} ${details ? `- ${details}` : ''}`);
     } else {
-      console.error(`❌ [FAIL] ${testName} ${details ? `- ${details}` : ''}`);
+      console.error(` [FAIL] ${testName} ${details ? `- ${details}` : ''}`);
     }
   }
 

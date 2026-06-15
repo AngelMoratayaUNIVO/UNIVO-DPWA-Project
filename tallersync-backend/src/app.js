@@ -13,6 +13,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static('public'))
 
 app.get('/health', (req, res) => {
   res.json({ success: true, message: 'TallerSync API corriendo', env: process.env.NODE_ENV })
