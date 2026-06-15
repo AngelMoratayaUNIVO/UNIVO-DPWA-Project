@@ -2,6 +2,7 @@
 
 Sistema web de gestión y seguimiento de vehículos para talleres mecánicos.  
 Este repositorio contiene únicamente el **backend** (Node.js + Express + Supabase).  
+El frontend en Vue será desarrollado por otro integrante del equipo.
 
 ---
 
@@ -46,6 +47,21 @@ npm install
 ```bash
 cp .env.example .env
 ```
+
+Luego editar `.env` con tus credenciales reales:
+
+```env
+PORT=3000
+NODE_ENV=development
+
+SUPABASE_URL=https://xxxxxxxxxxxx.supabase.co   # Dashboard Supabase → Settings → API
+SUPABASE_KEY=your_supabase_anon_key_here         # Dashboard Supabase → Settings → API → anon key
+
+JWT_SECRET=una_clave_larga_y_segura_minimo_32_caracteres
+JWT_EXPIRES_IN=7d
+```
+
+> ⚠️ Nunca subas el archivo `.env` a GitHub. Ya está en `.gitignore`.
 
 ### 4. Crear las tablas en Supabase
 

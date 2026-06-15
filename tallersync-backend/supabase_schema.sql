@@ -1,5 +1,6 @@
 -- ============================================================
 -- TallerSync — Script de creación de tablas en Supabase
+-- Ejecutar en: Supabase Dashboard > SQL Editor
 -- ============================================================
 
 -- Extensión para UUIDs (ya está habilitada en Supabase por defecto)
